@@ -1,5 +1,5 @@
 import user from "../../../assets/user.png"
-
+import './Navbar.css'
 const Navbar = () => {
     return (
         <nav className="flex justify-between items-center w-full">

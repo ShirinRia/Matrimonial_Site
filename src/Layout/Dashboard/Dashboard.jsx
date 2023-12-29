@@ -76,31 +76,30 @@ const Dashboard = () => {
                         <div className="border-b-2 h-1 w-6"></div>
                     </div>
                     {/* gradient */}
-                    <NavLink to={'/dashboard'} className="bg-gradient-to-r from-[#CC176A] to-[#FD282B] flex items-center gap-2 p-4 rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10ZM17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10ZM17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22ZM5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-
-                        <p className="text-white">Dashboard</p>
-                    </NavLink >
+                   
                     {/* menus */}
                     <ul className="menu  space-y-12">
+                    <NavLink to={'/dashboard'} className=" flex items-center gap-2 ">
+                       
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10ZM17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10ZM17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22ZM5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="gray" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
 
-
-
-                        <NavLink className="flex items-center gap-2" to={'/'} >
+                        <p >Dashboard</p>
+                    </NavLink >
+                        <NavLink className="flex items-center gap-2" to={'/users'} >
                             <img src={users} alt="users" />
                             <p > Users</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2" >
+                        <NavLink to={'/chat'} className="flex items-center gap-2" >
                             <img src={chat} alt="users" />
                             <p > Chat</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/social'} className="flex items-center gap-2"  >
                             <img src={social} alt="users" />
                             <p > Be Social</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/events'} className="flex items-center gap-2"  >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M8 2V5" stroke="#666666" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M16 2V5" stroke="#666666" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -109,7 +108,7 @@ const Dashboard = () => {
                             </svg>
                             <p > Events</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/package'} className="flex items-center gap-2"  >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M3.16992 7.43994L11.9999 12.5499L20.7699 7.46994" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M12 21.61V12.54" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -117,7 +116,7 @@ const Dashboard = () => {
                             </svg>
                             <p > Package</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/payment'} className="flex items-center gap-2"  >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M8.67188 14.3298C8.67188 15.6198 9.66188 16.6598 10.8919 16.6598H13.4019C14.4719 16.6598 15.3419 15.7498 15.3419 14.6298C15.3419 13.4098 14.8119 12.9798 14.0219 12.6998L9.99187 11.2998C9.20187 11.0198 8.67188 10.5898 8.67188 9.36984C8.67188 8.24984 9.54187 7.33984 10.6119 7.33984H13.1219C14.3519 7.33984 15.3419 8.37984 15.3419 9.66984" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M12 6V18" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -125,11 +124,11 @@ const Dashboard = () => {
                             </svg>
                             <p > Payment</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/portal'} className="flex items-center gap-2"  >
                             <img src={portal} alt="portal" />
                             <p >Portal Mangement</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/content'} className="flex items-center gap-2"  >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M8 12.2H15" stroke="#636363" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M8 16.2H12.38" stroke="#636363" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -138,7 +137,7 @@ const Dashboard = () => {
                             </svg>
                             <p > Content Management</p>
                         </NavLink>
-                        <NavLink className="flex items-center gap-2"  >
+                        <NavLink to={'/support'} className="flex items-center gap-2"  >
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M9.08984 9.00008C9.32495 8.33175 9.789 7.76819 10.3998 7.40921C11.0106 7.05024 11.7287 6.91902 12.427 7.03879C13.1253 7.15857 13.7587 7.52161 14.2149 8.06361C14.6712 8.60561 14.9209 9.2916 14.9198 10.0001C14.9198 12.0001 11.9198 13.0001 11.9198 13.0001" stroke="#636363" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

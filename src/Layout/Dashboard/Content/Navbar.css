@@ -1,0 +1,11 @@
+a.active{
+   
+    color:white;
+    padding: 16px 8px 16px 8px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #CC176A , #FD282B);
+
+}
+a.active svg path{
+    stroke:white;
+}

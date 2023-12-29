@@ -18,6 +18,54 @@ const Routes = createBrowserRouter([
                 // loader:() =>fetch('/partnership.json'),
             },
            
+            {
+                path: "/users",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/chat",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/social",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/portal",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/event",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/content",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/support",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
+            {
+                path: "/payment",
+                element: <Content/>,
+                // loader:() =>fetch('/partnership.json'),
+            },
+           
         ],
 
     },
