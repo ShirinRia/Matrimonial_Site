@@ -12,6 +12,8 @@ import user2 from '../../../assets/user2.png'
 import user3 from '../../../assets/user3.png'
 import { Link } from "react-router-dom";
 import Doughnutchart from "../Doughnutchart";
+import Areachart from "../Areachart";
+import Doughnutchart2 from "./Doughnutchart2";
 const Content = () => {
     return (
         <div className="w-full mx-4 space-y-7">
@@ -72,7 +74,10 @@ const Content = () => {
                     </div>
 
                 </div>
-                <div className="col-span-4"></div>
+                <div className="col-span-4 bg-white rounded-lg px-2 py-8 ">
+                <p className="text-2xl font-medium pb-5">User Growth</p>
+                    <Areachart/>
+                </div>
                 <div className="col-span-4 bg-white rounded-lg px-5 py-8 ">
 
                     <div className="pb-5 ">
@@ -100,7 +105,7 @@ const Content = () => {
                         />
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 bg-white rounded-lg px-8 py-8">
                    <Doughnutchart/>
                 </div>
                 <div className="col-span-6  bg-white rounded-lg px-8 py-8">
@@ -196,7 +201,9 @@ const Content = () => {
                 </div>
 
 
-                <div className="col-span-6"></div>
+                <div className="col-span-6 bg-white rounded-lg px-8 py-8">
+                    <Doughnutchart2/>
+                </div>
             </div>
         </div>
     );
