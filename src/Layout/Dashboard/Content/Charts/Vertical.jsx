@@ -1,10 +1,15 @@
 
-const Vertical = () => {
+const Vertical = ({text, percent,color}) => {
     return (
         <div>
-            <progress className="progress progress-accent  w-56" value={0} max="100"></progress>
-            <progress className="progress progress-black w-56" value="10" max="100"></progress>
-            <progress className="progress progress-accent w-56" value="100" max="100"></progress>
+            <div>
+                <div className="flex justify-between">
+                <p>{text}</p>
+                <p>{percent} %</p>
+                </div>
+            <progress className="progress progress-secondary  w-full" value={percent} max="100"></progress>
+            </div>
+           
         </div>
     );
 }

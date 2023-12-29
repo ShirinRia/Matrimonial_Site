@@ -83,14 +83,9 @@ const Horizontalbar = () => {
 
         <BarChart
             width={650}
-            height={300}
+            height={250}
             data={data}
-            margin={{
-                top: 5,
-                right: 5,
-                left: 5,
-                bottom: 5,
-            }}
+           
             barSize={10}
         >
             
