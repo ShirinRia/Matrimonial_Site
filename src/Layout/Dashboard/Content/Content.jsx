@@ -6,7 +6,12 @@ import icon3 from '../../../assets/Frame (1).svg'
 import icon4 from '../../../assets/profile-2user.svg'
 import Horizontalbar from "./Charts/Horizontalbar";
 import Vertical from "./Charts/Vertical";
-
+import Activeusercard from "./Activeusercard";
+import user1 from '../../../assets/user1.png'
+import user2 from '../../../assets/user2.png'
+import user3 from '../../../assets/user3.png'
+import { Link } from "react-router-dom";
+import Doughnutchart from "../Doughnutchart";
 const Content = () => {
     return (
         <div className="w-full mx-4 space-y-7">
@@ -47,7 +52,7 @@ const Content = () => {
                     <p className="text-2xl font-semibold mb-7">User Analytics</p>
                     <Horizontalbar />
                 </div>
-                <div className="col-span-4 bg-white rounded-lg px-8 py-8">
+                <div className="col-span-4 bg-white rounded-lg px-5 py-8">
                     <div className="border-b-2 pb-5 text-2xl font-medium">
                         <p>Time on Site</p>
                     </div>
@@ -68,8 +73,36 @@ const Content = () => {
 
                 </div>
                 <div className="col-span-4"></div>
-                <div className="col-span-4"></div>
-                <div className="col-span-4"></div>
+                <div className="col-span-4 bg-white rounded-lg px-5 py-8 ">
+
+                    <div className="pb-5 ">
+                        <div className="flex justify-between items-center">
+                            <p className="text-2xl font-medium">Most Active users</p>
+                            <Link className="text-base font-medium">See More</Link>
+                        </div>
+                    </div>
+                    <div className="space-y-3">
+                        <Activeusercard
+                            image={user1}
+                            name={'David Elson'}
+                            email={'elsonsf782@gmail.com'}
+                        />
+                        <Activeusercard
+                            image={user2}
+
+                            name={'Kathy Pacheco'}
+                            email={'pacheco54@gmail.com'}
+                        />
+                        <Activeusercard
+                            image={user3}
+                            name={'Patricia Sanders'}
+                            email={'sanders856@gmail.com'}
+                        />
+                    </div>
+                </div>
+                <div className="col-span-4">
+                   <Doughnutchart/>
+                </div>
                 <div className="col-span-6  bg-white rounded-lg px-8 py-8">
 
                     <div className="border-b-2 pb-5 ">
