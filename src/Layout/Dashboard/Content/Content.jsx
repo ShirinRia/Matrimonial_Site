@@ -4,6 +4,8 @@ import icon1 from '../../../assets/Frame.svg'
 import icon2 from '../../../assets/Frame (2).svg'
 import icon3 from '../../../assets/Frame (1).svg'
 import icon4 from '../../../assets/profile-2user.svg'
+import Horizontalbar from "./Charts/Horizontalbar";
+import Vertical from "./Charts/Vertical";
 
 const Content = () => {
     return (
@@ -37,6 +39,22 @@ const Content = () => {
              color={'#4E87F8'}
             />
             
+            </div>
+
+            {/* charts */}
+            <div className="grid grid-cols-12">
+                <div className="col-span-8 bg-white rounded-lg py-7 px-7">
+                    <p className="text-2xl font-semibold mb-9">User Analytics</p>
+                    <Horizontalbar/>
+                </div>
+                <div className="col-span-4">
+                    <Vertical/>
+                </div>
+                <div className="col-span-4"></div>
+                <div className="col-span-4"></div>
+                <div className="col-span-4"></div>
+                <div className="col-span-6"></div>
+                <div className="col-span-6"></div>
             </div>
         </div>
     );
