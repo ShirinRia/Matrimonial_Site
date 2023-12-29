@@ -4,10 +4,7 @@ import chat from '../../assets/messages-2.svg'
 import social from '../../assets/personalcard.svg'
 import portal from '../../assets/layer.svg'
 
-
 const Dashboard = () => {
-
-
     return (
         <section className=" flex p-8 bg-[#F5F6F8]">
             {/* dashboard side bar */}

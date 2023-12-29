@@ -19,11 +19,11 @@ const Navbar = () => {
                         <div className="w-9 rounded-full ">
                             <img src={user} />
                         </div>
-                       
+
                     </div>
                     <p className="text-[#575A61E5]">
                         Shiblu Ahmad
-                        </p>
+                    </p>
                 </div>
 
             </div>
