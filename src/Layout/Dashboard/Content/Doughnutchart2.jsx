@@ -7,7 +7,11 @@ const options = {
     responsive: true,
     maintainAspectRatio: false,
     plugins: {
+       
         legend:{
+            labels: {
+                padding: 30 //default is 10
+              },
             display:true,
             position:'right',
             
@@ -16,7 +20,7 @@ const options = {
   };
  const labels= ['Bangladesh', 'USA', 'India', 'Canada', 'Pakistan']
  const datas= [40, 25, 15, 10, 10]
- let customLabels = labels.map((label,index) =>`${label}  ${datas[index]}`)
+ let customLabels = labels.map((label,index) =>`${label}    ${datas[index]}`)
 //  console.log(customLabels)
 const data = {
    

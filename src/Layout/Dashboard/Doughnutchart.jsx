@@ -3,6 +3,19 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
+const options = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+     
+      legend:{
+          
+          display:true,
+         
+          
+        }
+  },
+};
 const labels= ['Male', 'Female',]
  const datas=  [70, 30]
  let customLabels = labels.map((label,index) =>`${label}  ${datas[index]}%`)
@@ -10,7 +23,7 @@ const data = {
   labels: customLabels,
   datasets: [
     {
-      label: '# of Votes',
+      
       data:datas,
       backgroundColor: [
         '#076A49',
@@ -37,7 +50,7 @@ const Doughnutchart = () => {
   }
   return (
     <div className='h-[250px] '>
-      <Doughnut data={data} plugins={[textCenter]} />
+      <Doughnut data={data} plugins={[textCenter]} options={options}/>
     </div>
   )
 

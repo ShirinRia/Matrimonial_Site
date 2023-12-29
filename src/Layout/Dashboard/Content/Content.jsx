@@ -60,23 +60,24 @@ const Content = () => {
                     </div>
                     <div className="space-y-7 mt-5">
                         <Vertical
-                            color={'#076A49'}
+
                             text={'07:00 PM - 12:00 AM'}
-                            percent={'70'} />
+                            percent={'70'}
+                        />
                         <Vertical
-                            color={'#CB176B'}
+
                             text={'05:00 PM - 07:00 PM'}
                             percent={'50'} />
                         <Vertical
-                            color={'#089C65'}
+
                             text={'07:00 AM - 12:00 PM'}
                             percent={'15'} />
                     </div>
 
                 </div>
                 <div className="col-span-4 bg-white rounded-lg px-2 py-8 ">
-                <p className="text-2xl font-medium pb-5">User Growth</p>
-                    <Areachart/>
+                    <p className="text-2xl font-medium pb-5">User Growth</p>
+                    <Areachart />
                 </div>
                 <div className="col-span-4 bg-white rounded-lg px-5 py-8 ">
 
@@ -106,7 +107,7 @@ const Content = () => {
                     </div>
                 </div>
                 <div className="col-span-4 bg-white rounded-lg px-8 py-8">
-                   <Doughnutchart/>
+                    <Doughnutchart />
                 </div>
                 <div className="col-span-6  bg-white rounded-lg px-8 py-8">
 
@@ -202,7 +203,7 @@ const Content = () => {
 
 
                 <div className="col-span-6 bg-white rounded-lg px-8 py-8">
-                    <Doughnutchart2/>
+                    <Doughnutchart2 />
                 </div>
             </div>
         </div>
